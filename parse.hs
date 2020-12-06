@@ -21,7 +21,7 @@ lowercase :: String -> String
 lowercase = (toLower <$>)
 
 indexHeading :: String
-indexHeading = "<p class=\"f1 dark-red b\">Christmas Family Questionnaire 2020!</p>"
+indexHeading = "<p class=\"f1 dark-red b\">Christmas Family Lists 2020!</p>"
 
 genIndex :: [String] -> String
 genIndex = foldr eachLink indexHeading . zip colors
