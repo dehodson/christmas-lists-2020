@@ -40,6 +40,7 @@ genSection c s
 
 genWishes :: Questionnaire -> String
 genWishes qn = "<p class=\"f1 dark-red b\">" ++ name qn ++ "'s Wish List</p>" ++
+               "<p class=\"f2 white b\">Mailing Address</p><p class=\"f4\">" ++ address qn ++ "</p>" ++
                unlines (uncurry genSection <$> zip (drop 2 colors) (sections qn))
 
 buildPage :: String -> String -> String -> String
