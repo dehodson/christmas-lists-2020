@@ -15,6 +15,7 @@ instance FromJSON Section
 
 data Questionnaire = Questionnaire { name :: String
                                    , sections :: [Section]
+                                   , address :: String
                                    } deriving (Show, Generic)
 
 instance ToJSON Questionnaire
